@@ -1,0 +1,100 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle,
+    rgba(126, 0, 171, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+$width: 100px;
+
+.flames {
+  position: relative;
+  width: 50px;
+  top: 35px;
+}
+
+.cube-perspective {
+  display: flex;
+  justify-content: center;
+  width: calc(#{$width} * 1.5);
+  height: calc(#{$width} * 1.5);
+  perspective: 800px;
+  perspective-origin: center;
+  &.from-bottom {
+    perspective-origin: 50% 300px;
+  }
+  &.from-top {
+    perspective-origin: 50% -100px;
+  }
+}
+
+.cube {
+  display: block;
+  position: relative;
+  top: calc(#{$width} / 2);
+  width: $width;
+  transform-style: preserve-3d;
+}
+.face {
+  position: absolute;
+  width: $width;
+  height: $width;
+  &.back {
+    transform: translateZ(calc(#{$width / -2})) rotateY(180deg);
+  }
+  &.right {
+    transform: rotateY(-270deg) translateX(calc(#{$width / 2}));
+    transform-origin: top right;
+  }
+  &.left {
+    transform: rotateY(270deg) translateX(calc(#{$width / -2}));
+    transform-origin: center left;
+  }
+  &.top {
+    transform: rotateX(-90deg) translateY(calc(#{$width / -2}));
+    transform-origin: top center;
+  }
+  &.bottom {
+    transform: rotateX(90deg) translateY(calc(#{$width / 2}));
+    transform-origin: bottom center;
+  }
+  &.front {
+    transform: translateZ(calc({$width / 2}));
+  }
+}
+
+.rotate {
+  animation: h-transform 10s linear infinite;
+}
+.translate {
+  animation: v-transform 3s ease-in-out infinite;
+}
+
+@keyframes h-transform {
+  to {
+    transform: rotateY(0deg);
+  }
+  from {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes v-transform {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

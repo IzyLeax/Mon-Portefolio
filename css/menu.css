@@ -1,0 +1,56 @@
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px;
+    font-family: 'Racing Sans One', cursive;
+    list-style-type: none;
+    font-size: 110%;
+    
+  }
+
+  .logo {
+    width: 5%;
+  }
+
+  .bouton{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../dossier/images/Fbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Racing Sans One', cursive;
+    color: rgb(209, 209, 209);
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #000000;
+  color: rgb(204, 204, 204);
+}
+
+a:visited {
+  color: rgb(198, 198, 198);
+  text-decoration: none;
+  list-style-type: none;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+

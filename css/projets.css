@@ -1,0 +1,82 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px;
+  font-family: 'Racing Sans One', cursive;
+  list-style-type: none;
+  font-size: 110%;
+}
+
+.logo {
+  width: 5%;
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../dossier/images/Fbackgr.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container-card {
+  display: grid;
+  background-color: rgb(0, 0, 0);
+  max-height: max-content;
+
+  align-items: center;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  height: 90px;
+  text-align: center;
+  font-family: 'Racing Sans One', cursive;
+}
+
+
+
+
+.btn-alert {
+color: rgb(246, 246, 246);
+font-size: 150%;
+}
+
+
+body {
+  background-color: rgb(0, 0, 0);
+  background-size: 400% 400%;
+  height: 100vh;
+  color: #fff700;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  list-style-type: none;
+  
+  }
+
+  .bouton{
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container-card{
+      display: grid;
+    }
+
+  @media screen and (max-width: 600px) {
+    .container-card{
+      display: grid;
+    }
+  }
+}
