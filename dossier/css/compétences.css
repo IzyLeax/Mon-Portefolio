@@ -1,0 +1,66 @@
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px;
+    color: rgb(55, 246, 7);
+    font-family: 'Racing Sans One', cursive;
+    list-style-type: none;
+    font-size: 110%;
+    
+  }
+
+  .logo {
+    width: 5%;
+  }
+
+  .bouton{
+    background-color: rgb(17, 83, 237);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../dossier/images/Fback.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Racing Sans One', cursive;
+    color: rgb(219, 243, 6);
+
+}
+
+.container-card {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.962);
+  grid-gap: 20px;
+  padding: 20px;
+  max-height: max-content;
+  align-items: baseline;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a:visited {
+  color: rgb(198, 198, 198);
+  text-decoration: none;
+  list-style-type: none;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  
+  
+  
+
+

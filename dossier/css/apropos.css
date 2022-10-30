@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px;
+  font-family: 'Racing Sans One', cursive;
+  list-style-type: none;
+  font-size: 110%;
+  
+}
+
+.logo {
+  width: 5%;
+}
+
+a:visited {
+color: rgb(252, 252, 252);
+text-decoration: none;
+list-style-type: none;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
